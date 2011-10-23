@@ -1,9 +1,21 @@
 #!/usr/bin/env node
-var Hook = require('hook.io').Hook
+var VanillaHook = require('../lib/vanilla-hook').VanillaHook
 
-var hook = new Hook( {
+var hook = new VanillaHook( {
   name: 'vanilla-hook',
-	hooks: ['github-hook', 'web'],
+	hooks: [
+		{
+			type: 'web',
+			name: 'webserver-hook',
+			port: 80,
+			debug:true
+		},
+		{
+			type: 'github-hook',
+			name: 'github-processor',
+			debug:true
+		}
+	],
 	debug:true
 });
 

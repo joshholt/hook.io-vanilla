@@ -6,7 +6,7 @@
     "hook.io",
     "hook"
   ],
-  "version": "0.0.2",
+  "version": "0.0.3",
   "homepage": "http://github.com/joshholt/hook.io-vanilla",
   "repository": {
     "type": "git",
@@ -15,7 +15,7 @@
   "bin" : {
     "hookio-vanilla" : "./bin/vanilla-hook"
   },
-  "main": "./bin/vanilla-hook",
+  "main": "./lib/vanilla-hook",
   "engines": {
     "node": ">=v0.4.7"
   },
