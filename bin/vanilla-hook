@@ -1,0 +1,10 @@
+#!/usr/bin/env node
+var Hook = require('hook.io').Hook
+
+var hook = new Hook( {
+  name: 'vanilla-hook',
+	hooks: ['github-hook', 'web']
+	debug:true
+});
+
+hook.start();
