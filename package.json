@@ -20,7 +20,9 @@
     "node": ">=v0.4.7"
   },
   "dependencies": {
-    "hook.io" : "0.7.x"
+    "hook.io" : "0.7.x",
+    "hook.io-web" : "0.0.1",
+    "hook.io-github-hook" : "0.0.1"
   },
   "devDependencies": {}
 }
